@@ -16,3 +16,9 @@ def grouper(n, iterable):
       buf = []
   if buf:
     yield buf
+
+for i in grouper(2, 'ABCDEFGHIJK'):
+	print i
+
+for i in grouper(3, 'ABCDEFGHIJK'):
+	print i
