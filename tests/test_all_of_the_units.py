@@ -5,7 +5,7 @@ def fun(x):
 
 class MyTest(unittest.TestCase):
     def test(self):
-        self.assertEqual(fun(3), 5)
+        self.assertEqual(fun(3), 4)
 
 if __name__ == '__main__':
     unittest.main()
