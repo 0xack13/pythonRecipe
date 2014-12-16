@@ -1,11 +1,14 @@
 import unittest
+from grouper import grouper
 
-def fun(x):
-    return x + 1
-
-class MyTest(unittest.TestCase):
+class GrouperTest(unittest.TestCase):
     def test(self):
-        self.assertEqual(fun(3), 4)
+
+    	#for i in grouper(2, 'ABCDEFGHIJK'):
+		#	print i
+		expected_result = [['A', 'B'], ['C', 'D'], ['E', 'F'], ['G', 'H'], ['I', 'J'], ['K']]
+		results = list(grouper.grouper(2, 'ABCDEFGHIJK'))
+		self.assertEqual(expected_result, results)
 
 if __name__ == '__main__':
     unittest.main()

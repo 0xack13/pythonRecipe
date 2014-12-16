@@ -5,7 +5,6 @@
 ### ['C', 'D']
 ### ['E', 'F']
 ##  ['G']
-
 def grouper(n, iterable):
   "grouper(3, 'ABCDEFG') --> ABC DEF G"
   buf = []
@@ -17,8 +16,5 @@ def grouper(n, iterable):
   if buf:
     yield buf
 
-for i in grouper(2, 'ABCDEFGHIJK'):
-	print i
 
-for i in grouper(3, 'ABCDEFGHIJK'):
-	print i
+
