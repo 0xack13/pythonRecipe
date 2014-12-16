@@ -1,7 +1,7 @@
 import unittest
 import sys
-sys.path.append('../grouper')
-import grouper
+sys.path.append('../')
+from pythonRecipe.grouper import grouper
 
 class GrouperTest(unittest.TestCase):
 	def test(self):
