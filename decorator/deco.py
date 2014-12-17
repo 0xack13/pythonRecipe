@@ -1,5 +1,6 @@
 import time
 
+#Define decorator
 def time_dec(func):
 
   def wrapper(*arg):
@@ -12,7 +13,7 @@ def time_dec(func):
 
 
 @time_dec
-def myFunction(n):
-	print "here is my func"
+def printFunction(n):
+	print "Here is my func!"
 
-myFunction(10)
+printFunction(10)
