@@ -10,10 +10,3 @@ def time_dec(func):
       return res
 
   return wrapper
-
-
-@time_dec
-def printFunction(n):
-	print "Here is my func!"
-
-printFunction(10)
