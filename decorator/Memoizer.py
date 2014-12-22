@@ -76,6 +76,20 @@ def Memoizer(*args, **kwargs):
 def sum(a, b):
     return a+b
 
+"""
+Sample output:
+
+'sum' calculated a new value which took  0.003 ms.
+5
+'sum' returned a cached value.
+5
+'sum' calculated a new value which took  0.002 ms.
+5
+sum has been called 1 times.
+
+
+"""
+
 print sum(a=3,b=2)    # Function is evaluated, return value
 print sum(a=3,b=2)    # Function returns cached value
 sum.clear()           # The cached value is cleared
