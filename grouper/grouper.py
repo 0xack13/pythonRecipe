@@ -5,6 +5,7 @@
 ### ['C', 'D']
 ### ['E', 'F']
 ##  ['G']
+
 class grouper:
   @staticmethod
   def grouperfn(n, iterable):
